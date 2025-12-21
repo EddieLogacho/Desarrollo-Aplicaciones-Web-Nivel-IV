@@ -1,0 +1,22 @@
+
+
+body{
+    background: #CAC531;  
+    background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);  
+    background: linear-gradient(to right, #F3F9A7, #CAC531); 
+}
+.text-justify {
+    text-align: justify;
+}
+.card:hover{
+    opacity: 0.7;
+}
+.card-text{
+    text-align: justify;
+}
+.nav-link{
+    font-weight: 600;
+}
+#txtComment {
+    resize: none;
+}
