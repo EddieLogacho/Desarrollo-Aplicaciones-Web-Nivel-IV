@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Viewport correctamente definido -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Semana 5 – Galería Interactiva</title>
+
+  <!-- Hoja de estilos en la misma carpeta -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>GALERÍA DE IMÁGENES INTERACTIVA</h1>
+    <p>
+      Agrega imágenes por URL, selecciónalas y elimínalas.
+      (Atajos: <kbd>Enter</kbd> para agregar, <kbd>Delete</kbd> para eliminar)
+    </p>
+  </header>
+
+  <main class="app-main">
+    <section class="controls" aria-label="Controles de la galería">
+      <label for="imageUrl">URL de la imagen</label>
+      <input
+        id="imageUrl"
+        type="url"
+        placeholder="https://ejemplo.com/imagen.jpg"
+        required
+      />
+      <button id="addBtn" type="button">Agregar Imagen</button>
+      <button id="delBtn" type="button" class="danger">Eliminar Imagen Seleccionada</button>
+      <div id="feedback" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="gallery" id="gallery" aria-label="Galería de imágenes">
+      <!-- Las imágenes se agregan dinámicamente aquí -->
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <small>© 2026 – Universidad Estatal Amazónica – Semana 5</small>
+  </footer>
+
+  <!-- Script principal en la misma carpeta -->
+  <script src="script.js"></script>
+</body>
+</html>
